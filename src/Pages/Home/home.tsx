@@ -420,7 +420,7 @@ export default function Home() {
         <div className="col-span-1" />
 
         <div className="col-span-1 sm:col-span-3" />
-        <div className="col-span-10 sm:col-span-3 border border-slate-600 rounded-2xl">
+        <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl ">
           <div className="p-4 bg-green-800 text-center rounded-t-2xl">
             <h1 className="font-semibold text-white text-xl">COMPRE 5 POTES</h1>
             <h1 className="font-extrabold text-[#ECFF00] text-2xl leading-none">
@@ -471,7 +471,7 @@ export default function Home() {
         <div className="col-span-1 sm:hidden" />
 
         <div className="col-span-1 sm:hidden" />
-        <div className=" col-span-10 sm:col-span-3 border border-slate-600 rounded-2xl">
+        <div className=" col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
           <div className="p-4 bg-green-800 text-center rounded-t-2xl">
             <h1 className="font-semibold text-white text-xl">COMPRE 4 POTES</h1>
             <h1 className="font-extrabold text-[#ECFF00] text-2xl leading-none">
@@ -525,7 +525,7 @@ export default function Home() {
 
         <div className="col-span-12 grid grid-cols-12 sm:grid-cols-11 gap-5 mt-5">
           <div className="col-span-1" />
-          <div className="col-span-10 sm:col-span-3 border border-slate-600 rounded-2xl">
+          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
             <div className="p-4 bg-green-800 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 3 POTES
@@ -578,7 +578,7 @@ export default function Home() {
           <div className="col-span-1 sm:hidden" />
 
           <div className="col-span-1 sm:hidden" />
-          <div className="col-span-10 sm:col-span-3 border border-slate-600 rounded-2xl">
+          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
             <div className="p-4 bg-green-800 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 2 POTES
@@ -631,7 +631,7 @@ export default function Home() {
           <div className="col-span-1 sm:hidden" />
 
           <div className="col-span-1 sm:hidden" />
-          <div className="col-span-10 sm:col-span-3 border border-slate-600 rounded-2xl">
+          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
             <div className="p-4 bg-green-800 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 1 POTE
