@@ -24,8 +24,7 @@ export default function Home() {
           alt="logodetox"
         />
       </div>
-
-      <div className="sm:h-screen col-span-12 grid grid-cols-12 pb-10  bg-gradient-to-l from-lime-200 via-white to-white">
+      <div className="sm:h-screen col-span-12 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-1" />
         <div className="col-span-10 sm:col-span-4 flex  flex-col items-start justify-start pt-10">
           <div className="text-center sm:text-left">
@@ -44,7 +43,7 @@ export default function Home() {
           </div>
           <div className="w-full sm:mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
             <iframe
-              className="!w-full sm:h-60 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
+              className="!w-full sm:h-56 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
               src="https://www.youtube.com/embed/u1KOagon26Y?si=nGxhWPlfRzaI0blc"
               title="YouTube video player"
               // frameborder="0"
@@ -98,7 +97,7 @@ export default function Home() {
         <div className="col-span-1" />
       </div>
 
-      <div className="sm:h-screen col-span-12 py-10 sm:py-0 grid grid-cols-12 bg-gradient-to-l from-lime-200 via-white to-white">
+      <div className="sm:h-screen col-span-12 py-10 sm:py-0 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-1" />
         <div className="hidden col-span-5  sm:flex items-end justify-center">
           <img
@@ -212,7 +211,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" col-span-12 grid grid-cols-12 bg-gradient-to-l from-lime-200 via-white to-white">
+      <div className=" col-span-12 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-14">
           <p className=" w-full text-center font-Montserrat font-bold text-3xl mt-10 text-green-700">
             Conheça a formulação do New Detox
@@ -410,7 +409,7 @@ export default function Home() {
         <div className="sm:hidden col-span-1" />
       </div>
 
-      <div className="col-span-12 grid grid-cols-12 gap-5 bg-gradient-to-l from-lime-200 via-white to-white">
+      <div className="col-span-12 grid grid-cols-12 gap-5 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-1" />
         <div className="col-span-10 py-10">
           <p className=" w-full text-center font-Montserrat leading-none font-bold text-3xl sm:text-4xl mt-10 text-green-700">
@@ -727,10 +726,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="col-span-12 grid grid-cols-12 gap-5  mb-10 bg-gradient-to-l from-lime-200 via-white to-white">
+      <div className="col-span-12 grid grid-cols-12 gap-5  mb-10 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-10">
           <p className=" w-full text-center font-Montserrat leading-none font-bold text-4xl mt-10 text-green-700">
-            Ainda com <br className="flex sm:hidden"/> dúvidas?
+            Ainda com <br className="flex sm:hidden" /> dúvidas?
           </p>
         </div>
         <div className="col-span-1 sm:col-span-3" />
