@@ -11,12 +11,92 @@ import {
   Button,
   Container,
 } from "@mui/material";
+import "animate.css";
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import { useState } from "react";
+import { Notification } from "../../components/notification";
+import CardYoutube from "../../components/cardDepoiments";
 
 export default function Home() {
   return (
-    <div className="w-full grid grid-cols-12">
+    <div className="w-full grid grid-cols-12 relative">
+      <Notification />
+      <div className="col-span-2">
+        <CardYoutube
+          link="yliEKAoKSwA"
+          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+          creator="Depoimento"
+          brand_name="Detox New"
+          action="kit 4 Potes"
+          height="400px"
+          
+        />
+        {/* <CardYoutube action="action" brand="Brand" brand_name="Brand_name"  link="1R0kfp0FKtk" avatar="asdasdas" creator="Luander" height="450" /> */}
+      </div>
+      <div className="col-span-2">
+        <CardYoutube
+          link="N8AFd03-GhQ"
+          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+          creator="Depoimento"
+          brand_name="Detox New"
+          action="kit 4 Potes"
+          height="400px"
+          
+        />
+        {/* <CardYoutube action="action" brand="Brand" brand_name="Brand_name"  link="1R0kfp0FKtk" avatar="asdasdas" creator="Luander" height="450" /> */}
+      </div>
+      <div className="col-span-2">
+        <CardYoutube
+          link="LkBLHTNEPXA"
+          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+          creator="Depoimento"
+          brand_name="Detox New"
+          action="kit 4 Potes"
+          height="400px"
+          
+        />
+      </div>
+      <div className="col-span-2">
+        <CardYoutube
+          link="DfnH-IqwlhM"
+          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+          creator="Depoimento"
+          brand_name="Detox New"
+          action="kit 4 Potes"
+          height="400px"
+          
+        />
+      </div>
+      <div className="col-span-2">
+        <CardYoutube
+          link="O7oX2by8fag"
+          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+          creator="Depoimento"
+          brand_name="Detox New"
+          action="kit 4 Potes"
+          height="400px"
+          
+        />
+      </div>
+      <div className="col-span-2">
+        <CardYoutube
+          link="oA5edQXU26U"
+          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+          creator="Depoimento"
+          brand_name="Detox New"
+          action="kit 4 Potes"
+          height="400px"
+          
+        />
+      </div>
       <div className="col-span-12 p-5 border-b-2 border-green-500 flex items-center justify-center">
         <img
           className="w-32 sm:w-40"
@@ -24,7 +104,7 @@ export default function Home() {
           alt="logodetox"
         />
       </div>
-      <div className="sm:h-screen col-span-12 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
+      <div className="sm:h-screen col-span-12 grid grid-cols-12 pb-10 sm:pb-0 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-1" />
         <div className="col-span-10 sm:col-span-4 flex  flex-col items-start justify-start pt-10">
           <div className="text-center sm:text-left">
@@ -41,9 +121,9 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="w-full sm:mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
+          <div className="w-full sm:w-fit sm:mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
             <iframe
-              className="!w-full sm:h-56 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
+              className="w-full sm:w-96 h-48 sm:h-56 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
               src="https://www.youtube.com/embed/u1KOagon26Y?si=nGxhWPlfRzaI0blc"
               title="YouTube video player"
               // frameborder="0"
@@ -219,13 +299,13 @@ export default function Home() {
         </div>
         <div className="col-span-1" />
         <div className="col-span-10 grid grid-cols-4 gap-5">
-          <div className="col-span-4 sm:col-span-1 flex flex-col justify-start items-start rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
+          <div className="col-span-4 sm:col-span-1 flex flex-col justify-start !z-50 items-start rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
             <img
               src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T163958.509.webp"
               alt=""
               className=""
             />
-            <div className="p-5">
+            <div className="p-5 !z-50">
               <h1 className="font-Montserrat font-bold text-2xl text-green-700">
                 Ágar-agar
               </h1>
@@ -361,32 +441,32 @@ export default function Home() {
         </div>
         <div className="col-span-1" />
         <div className="col-span-10 grid grid-cols-3 gap-8">
-          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out  shadow-2xl shadow-black/30">
+          <div className="col-span-3 sm:col-span-1 bg-white p-7  flex items-center justify-center rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-2xl shadow-black/30">
             <h1 className="w-fit h-fit text-center font-Montserrat  font-bold text-xl text-green-700  ">
               Já tentou de tudo mas não consegue Emagrecer
             </h1>
           </div>
-          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out  shadow-lg shadow-black/30">
+          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out hover:scale-105 active:scale-95  shadow-lg shadow-black/30">
             <h1 className="w-fit h-fit text-center font-Montserrat  font-bold text-xl text-green-700  ">
               Vive Cansada(o) e sem disposição para Nada
             </h1>
           </div>
-          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out  shadow-lg shadow-black/30">
+          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out hover:scale-105 active:scale-95  shadow-lg shadow-black/30">
             <h1 className="w-fit h-fit text-center font-Montserrat  font-bold text-xl text-green-700  ">
               Vive com Fome e Ansiedade
             </h1>
           </div>
-          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out  shadow-lg shadow-black/30">
+          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out hover:scale-105 active:scale-95  shadow-lg shadow-black/30">
             <h1 className="w-fit h-fit text-center font-Montserrat  font-bold text-xl text-green-700  ">
               Está com o Corpo Inchado e Pesado
             </h1>
           </div>
-          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out  shadow-lg shadow-black/30">
+          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out hover:scale-105 active:scale-95  shadow-lg shadow-black/30">
             <h1 className="w-fit h-fit text-center font-Montserrat  font-bold text-xl text-green-700  ">
               Quer Emagrecer Rápido Sem Passar Fome
             </h1>
           </div>
-          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out  shadow-lg shadow-black/30">
+          <div className="col-span-3 sm:col-span-1 bg-white  p-7  flex items-center justify-center rounded-xl transition ease-in-out hover:scale-105 active:scale-95  shadow-lg shadow-black/30">
             <h1 className="w-fit h-fit text-center font-Montserrat  font-bold text-xl text-green-700  ">
               Busca uma Solução Rápida e Saudável para Emagrecer
             </h1>
