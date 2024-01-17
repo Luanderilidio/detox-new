@@ -96,7 +96,7 @@ export function Notification() {
       }  animate__animated `}
       // className={`bg-green-700 flex items-center gap-2 p-3 shadow-lg shadow-black/30 text-white fixed right-5 !z-50 bottom-5 rounded-xl`}
     >
-      <img className="w-20" src={Selo1} alt="" />
+      <img className="w-20 " src={Selo1} alt="" />
       {/* <CheckCircleIcon sx={{ fontSize: 40, color: "#28c700" }} /> */}
       <div>
         <p className="text-md uppercase font-semibold font-Inter leading-none ">
@@ -121,10 +121,10 @@ export function Notification() {
           </p>
           <img
             src="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-            className="w-full  sm:w-14 drop-shadow-2xl"
+            className="w-14  sm:w-14 drop-shadow-2xl"
           />
         </div>
-      <img src={Selo3} className="w-full  sm:w-20 drop-shadow-2xl" />
+      <img src={Selo3} className="w-12  sm:w-20 drop-shadow-2xl" />
       </div>
     </div>
   );

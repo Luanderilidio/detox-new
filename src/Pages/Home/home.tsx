@@ -129,7 +129,7 @@ export default function Home() {
               // allowfullscreen
             ></iframe>
           </div>
-          <div className="flex flex-col mt-5 !z-40 !w-full">
+          <div className="flex flex-col mt-5  !w-full">
             <button className="font-Montserrat  sm:w-96 p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
               Quero um corpo novo
             </button>
@@ -254,7 +254,7 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col mt-6 w-full">
-              <button className="w-full sm:w-96 p-3 bg-white z-50 border-b-4 border-lime-500 text-black font-extrabold text-md uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+              <button className="w-full sm:w-96 p-3 bg-white border-b-4 border-lime-500 text-black font-extrabold text-md uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
                 QUERO UM CORPO NOVO
               </button>
               <div className="flex items-center justify-center gap-2 mt-2">
@@ -297,13 +297,13 @@ export default function Home() {
         </div>
         <div className="col-span-1" />
         <div className="col-span-10 grid grid-cols-4 gap-5">
-          <div className="col-span-4 sm:col-span-1 flex flex-col justify-start !z-50 items-start rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
+          <div className="col-span-4 sm:col-span-1 flex flex-col justify-start items-start rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
             <img
               src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T163958.509.webp"
               alt=""
               className=""
             />
-            <div className="p-5 !z-50">
+            <div className="p-5 ">
               <h1 className="font-Montserrat font-bold text-2xl text-green-700">
                 Ágar-agar
               </h1>
@@ -498,7 +498,7 @@ export default function Home() {
         <div className="col-span-1" />
 
         <div className="col-span-1 sm:col-span-3" />
-        <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl ">
+        <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl ">
           <div className="p-4 bg-green-800 text-center rounded-t-2xl">
             <h1 className="font-semibold text-white text-xl">COMPRE 5 POTES</h1>
             <h1 className="font-extrabold text-[#ECFF00] text-2xl leading-none">
@@ -549,7 +549,7 @@ export default function Home() {
         <div className="col-span-1 sm:hidden" />
 
         <div className="col-span-1 sm:hidden" />
-        <div className=" col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
+        <div className=" col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
           <div className="p-4 bg-green-800 text-center rounded-t-2xl">
             <h1 className="font-semibold text-white text-xl">COMPRE 4 POTES</h1>
             <h1 className="font-extrabold text-[#ECFF00] text-2xl leading-none">
@@ -603,7 +603,7 @@ export default function Home() {
 
         <div className="col-span-12 grid grid-cols-12 sm:grid-cols-11 gap-5 mt-5">
           <div className="col-span-1" />
-          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
+          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
             <div className="p-4 bg-green-800 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 3 POTES
@@ -656,7 +656,7 @@ export default function Home() {
           <div className="col-span-1 sm:hidden" />
 
           <div className="col-span-1 sm:hidden" />
-          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
+          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
             <div className="p-4 bg-green-800 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 2 POTES
@@ -709,7 +709,7 @@ export default function Home() {
           <div className="col-span-1 sm:hidden" />
 
           <div className="col-span-1 sm:hidden" />
-          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 rounded-2xl">
+          <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
             <div className="p-4 bg-green-800 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 1 POTE
