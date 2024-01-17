@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="w-full grid grid-cols-12 relative">
       <Notification />
-      <div className="col-span-2">
+      <div className= " hidden col-span-2">
         <CardYoutube
           link="yliEKAoKSwA"
           brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
@@ -34,9 +34,8 @@ export default function Home() {
           height="400px"
           
         />
-        {/* <CardYoutube action="action" brand="Brand" brand_name="Brand_name"  link="1R0kfp0FKtk" avatar="asdasdas" creator="Luander" height="450" /> */}
       </div>
-      <div className="col-span-2">
+      <div className="hidden col-span-2">
         <CardYoutube
           link="N8AFd03-GhQ"
           brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
@@ -47,9 +46,8 @@ export default function Home() {
           height="400px"
           
         />
-        {/* <CardYoutube action="action" brand="Brand" brand_name="Brand_name"  link="1R0kfp0FKtk" avatar="asdasdas" creator="Luander" height="450" /> */}
       </div>
-      <div className="col-span-2">
+      <div className="hidden col-span-2">
         <CardYoutube
           link="LkBLHTNEPXA"
           brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
@@ -61,7 +59,7 @@ export default function Home() {
           
         />
       </div>
-      <div className="col-span-2">
+      <div className="hidden col-span-2">
         <CardYoutube
           link="DfnH-IqwlhM"
           brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
@@ -73,7 +71,7 @@ export default function Home() {
           
         />
       </div>
-      <div className="col-span-2">
+      <div className="hidden col-span-2">
         <CardYoutube
           link="O7oX2by8fag"
           brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
@@ -85,7 +83,7 @@ export default function Home() {
           
         />
       </div>
-      <div className="col-span-2">
+      <div className="hidden col-span-2">
         <CardYoutube
           link="oA5edQXU26U"
           brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
