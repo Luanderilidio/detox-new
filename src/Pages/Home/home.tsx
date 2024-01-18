@@ -18,12 +18,14 @@ import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { useState } from "react";
 import { Notification } from "../../components/notification";
 import CardYoutube from "../../components/cardDepoiments";
+import CardCompose from "../../components/cardCompose";
+import { data } from "../../components/cardCompose/data";
 
 export default function Home() {
   return (
     <div className="w-full grid grid-cols-12 relative">
       <Notification />
-      <div className= " hidden col-span-2">
+      <div className=" hidden col-span-2">
         <CardYoutube
           link="yliEKAoKSwA"
           brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
@@ -32,7 +34,6 @@ export default function Home() {
           brand_name="Detox New"
           action="kit 4 Potes"
           height="400px"
-          
         />
       </div>
       <div className="hidden col-span-2">
@@ -44,7 +45,6 @@ export default function Home() {
           brand_name="Detox New"
           action="kit 4 Potes"
           height="400px"
-          
         />
       </div>
       <div className="hidden col-span-2">
@@ -56,7 +56,6 @@ export default function Home() {
           brand_name="Detox New"
           action="kit 4 Potes"
           height="400px"
-          
         />
       </div>
       <div className="hidden col-span-2">
@@ -68,7 +67,6 @@ export default function Home() {
           brand_name="Detox New"
           action="kit 4 Potes"
           height="400px"
-          
         />
       </div>
       <div className="hidden col-span-2">
@@ -80,7 +78,6 @@ export default function Home() {
           brand_name="Detox New"
           action="kit 4 Potes"
           height="400px"
-          
         />
       </div>
       <div className="hidden col-span-2">
@@ -92,7 +89,6 @@ export default function Home() {
           brand_name="Detox New"
           action="kit 4 Potes"
           height="400px"
-          
         />
       </div>
       <div className="col-span-12 p-5 border-b-2 border-green-500 flex items-center justify-center">
@@ -297,7 +293,16 @@ export default function Home() {
         </div>
         <div className="col-span-1" />
         <div className="col-span-10 grid grid-cols-4 gap-5">
-          <div className="col-span-4 sm:col-span-1 flex flex-col justify-start items-start rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
+          {data.map((item, index) => (
+            <CardCompose
+              images={item.images}
+              description={item.description}
+              name={item.name}
+              link={item.link}
+              key={index}
+            />
+          ))}
+          {/* <div className="col-span-4 sm:col-span-1 flex flex-col justify-start items-start rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
             <img
               src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T163958.509.webp"
               alt=""
@@ -423,7 +428,7 @@ export default function Home() {
                 sensação de saciedade e diminuindo a fome.
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="col-span-4">
             <div className="flex items-center justify-center gap-2 mt-2">
               <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />

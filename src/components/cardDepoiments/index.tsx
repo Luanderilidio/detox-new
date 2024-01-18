@@ -79,7 +79,7 @@ function CardYoutube({
                 {brand_name}
               </p>
               <p className='font-bold font-Montserrat text-4xl italic text-green-700'>
-             5x
+             fax
               </p>
             </div>
           </div>
