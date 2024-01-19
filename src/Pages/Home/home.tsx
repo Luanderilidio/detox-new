@@ -20,77 +20,218 @@ import { Notification } from "../../components/notification";
 import CardYoutube from "../../components/cardDepoiments";
 import CardCompose from "../../components/cardCompose";
 import { data } from "../../components/cardCompose/data";
+import { LogosContainer, LogosSlide } from "../../utils/Carrousel";
 
 export default function Home() {
   return (
     <div className="w-full grid grid-cols-12 relative">
       <Notification />
-      <div className=" hidden col-span-2">
-        <CardYoutube
-          link="yliEKAoKSwA"
-          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-          creator="Depoimento"
-          brand_name="Detox New"
-          action="kit 4 Potes"
-          height="400px"
-        />
+      <div className="hidden col-span-12">
+        <LogosContainer className="logos bg-transparent">
+          <LogosSlide className="logos-slide bg-transparent flex gap-5 w-fit border border-red-500">
+           
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="yliEKAoKSwA"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="N8AFd03-GhQ"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="LkBLHTNEPXA"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="DfnH-IqwlhM"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="O7oX2by8fag"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="oA5edQXU26U"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="yliEKAoKSwA"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="N8AFd03-GhQ"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="LkBLHTNEPXA"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="DfnH-IqwlhM"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="O7oX2by8fag"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="oA5edQXU26U"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="yliEKAoKSwA"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="N8AFd03-GhQ"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="LkBLHTNEPXA"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="DfnH-IqwlhM"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="O7oX2by8fag"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+            <div className="w-48 col-span-2">
+              <CardYoutube
+                link="oA5edQXU26U"
+                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
+                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
+                creator="Depoimento"
+                brand_name="Detox New"
+                action="kit 4 Potes"
+                height="350px"
+              />
+            </div>
+          </LogosSlide>
+        </LogosContainer>
       </div>
-      <div className="hidden col-span-2">
-        <CardYoutube
-          link="N8AFd03-GhQ"
-          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-          creator="Depoimento"
-          brand_name="Detox New"
-          action="kit 4 Potes"
-          height="400px"
-        />
-      </div>
-      <div className="hidden col-span-2">
-        <CardYoutube
-          link="LkBLHTNEPXA"
-          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-          creator="Depoimento"
-          brand_name="Detox New"
-          action="kit 4 Potes"
-          height="400px"
-        />
-      </div>
-      <div className="hidden col-span-2">
-        <CardYoutube
-          link="DfnH-IqwlhM"
-          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-          creator="Depoimento"
-          brand_name="Detox New"
-          action="kit 4 Potes"
-          height="400px"
-        />
-      </div>
-      <div className="hidden col-span-2">
-        <CardYoutube
-          link="O7oX2by8fag"
-          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-          creator="Depoimento"
-          brand_name="Detox New"
-          action="kit 4 Potes"
-          height="400px"
-        />
-      </div>
-      <div className="hidden col-span-2">
-        <CardYoutube
-          link="oA5edQXU26U"
-          brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-          avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-          creator="Depoimento"
-          brand_name="Detox New"
-          action="kit 4 Potes"
-          height="400px"
-        />
-      </div>
+
       <div className="col-span-12 p-5 border-b-2 border-green-500 flex items-center justify-center">
         <img
           className="w-32 sm:w-40"
