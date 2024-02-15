@@ -12,7 +12,7 @@ import { DDDs, nomesMulheres } from "./test";
 export function Notification() {
   const [inUp, setInUp] = useState(false);
 
-  const numeros = faker.datatype.number({ min: 10000, max: 20000 });
+  const numeros = faker.datatype.number({ min: 20000, max: 50000 });
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -25,7 +25,7 @@ export function Notification() {
 
   return (
     <div
-      className={`bg-gradient-to-l from-green-600 via-green-700 to-green-900 flex items-center gap-2 p-3 shadow-lg shadow-black/30 text-white fixed right-5 !z-50 bottom-5 rounded-xl ${
+      className={`bg-gradient-to-l from-green-600 via-green-700 to-green-900 flex items-center gap-2 p-3 shadow-lg shadow-black/30 text-white fixed right-1 !z-50 bottom-5 rounded-xl ${
         inUp ? "animate__backInUp" : "animate__backOutDown"
       }  animate__animated `}
       // className={`bg-green-700 flex items-center gap-2 p-3 shadow-lg shadow-black/30 text-white fixed right-5 !z-50 bottom-5 rounded-xl`}

@@ -10,6 +10,7 @@ import {
   AccordionSummary,
   Button,
   Container,
+  Link,
 } from "@mui/material";
 import "animate.css";
 
@@ -22,14 +23,33 @@ import CardCompose from "../../components/cardCompose";
 import { data } from "../../components/cardCompose/data";
 import { LogosContainer, LogosSlide } from "../../utils/Carrousel";
 
+import Caps1 from "../../assets/caps/1-app-1.png";
+import Caps2 from "../../assets/caps/2-app-e.png";
+import Caps3 from "../../assets/caps/3-app-e.png";
+import Caps4 from "../../assets/caps/4-new-e.png";
+import Caps5 from "../../assets/caps/5-new-e.png";
+
+import Noticia1 from "../../assets/noticias/noticia1.png";
+import Noticia2 from "../../assets/noticias/noticia2.png";
+import Noticia3 from "../../assets/noticias/noticia3.png";
+import Noticia4 from "../../assets/noticias/noticia4.png";
+
+import {
+  CardNews,
+  images1,
+  images2,
+  images3,
+  images4,
+} from "../../components/cardNews";
+import { CardDepoiments2 } from "../../components/cardDepoiments2";
+
 export default function Home() {
   return (
     <div className="w-full grid grid-cols-12 relative">
       <Notification />
-      <div className="hidden col-span-12">
-        <LogosContainer className="logos bg-transparent">
+      <div className=" col-span-12">
+        <LogosContainer className=" hidden logos bg-transparent">
           <LogosSlide className="logos-slide bg-transparent flex gap-5 w-fit border border-red-500">
-           
             <div className="w-48 col-span-2">
               <CardYoutube
                 link="yliEKAoKSwA"
@@ -357,22 +377,8 @@ export default function Home() {
         <div className="col-span-12 grid grid-cols-12 sm:gap-20">
           <div className="col-span-1" />
           <div className="col-span-10  sm:col-span-3 flex flex-col items-center justify-center gap-5">
-            <div className="mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
-              <iframe
-                className="sm:w-96 sm:h-60 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
-                src="https://www.youtube.com/embed/qVTQ96j-HkU?si=i_NxsqoiT0_qLcBe"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
-            </div>
-            <div className="mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
-              <iframe
-                className="sm:w-96 sm:h-60 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
-                src="https://www.youtube.com/embed/7GOKtE0CJ7Y?si=CERK-ctAeBO2H3LE"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
-            </div>
+            <CardNews images={images3} />
+            <CardNews images={images4} />
           </div>
           <div className="flex sm:hidden col-span-1" />
 
@@ -403,28 +409,44 @@ export default function Home() {
           <div className="flex sm:hidden col-span-1" />
 
           <div className="flex sm:hidden col-span-1" />
-          <div className="col-span-10 sm:col-span-3 flex flex-col items-center justify-center">
-            <div className="mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
-              <iframe
-                className="sm:w-96 sm:h-60 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
-                src="https://www.youtube.com/embed/7GOKtE0CJ7Y?si=CERK-ctAeBO2H3LE"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
-            </div>
-            <div className="mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
-              <iframe
-                className="sm:w-96 sm:h-60 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
-                src="https://www.youtube.com/embed/ZCeXw0ExDCA?si=cVleaA1yCpmQiXwK"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
-            </div>
+          <div className="col-span-10 sm:col-span-3 flex flex-col  gap-5 items-center justify-center">
+            <CardNews images={images1} />
+            <CardNews images={images2} />
           </div>
 
           <div className="col-span-1" />
         </div>
+        <div className="col-span-12 py-10">
+          <p className=" w-full text-center font-Montserrat font-bold text-4xl  text-white">
+            Feedback de quem recomenda!
+          </p>
+        </div>
+        <div className="col-span-12">
+          <CardDepoiments2 />
+        </div>
       </div>
+
+      {/* <div className=" col-span-12 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
+        <div className="col-span-12 py-14">
+          <p className=" w-full text-center font-Montserrat font-bold text-3xl mt-10 text-green-700">
+            Veja oque falam sobre o Detox
+          </p>
+        </div>
+        <div className="col-span-1" />
+        <div className="col-span-10">
+          <CardNews />
+        </div>
+        <div className="col-span-1" />
+        <div className="sm:hidden col-span-1" />
+        <div className="col-span-10 sm:col-span-12">
+          <div className="flex items-center justify-center flex-col mt-6 w-full ">
+            <button className="w-full sm:w-96 p-3 bg-green-700 border-b-4 border-lime-500 text-white font-extrabold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+              100% NATURAL E EFICAZ!
+            </button>
+          </div>
+        </div>
+        <div className="sm:hidden col-span-1" />
+      </div> */}
 
       <div className=" col-span-12 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-14">
@@ -633,6 +655,43 @@ export default function Home() {
         <div className="sm:hidden col-span-1" />
       </div>
 
+      <div className="col-span-12 grid py-10 mt-10 grid-cols-12 bg-gradient-to-l from-green-500 via-green-700 to-green-900 text-white">
+        <div className="col-span-1" />
+        <div className="col-span-10 sm:col-span-5 flex flex-col items-center justify-center sm:items-start sm:justify-start gap-5">
+          <h1 className="w-full text-center sm:text-left text-3xl sm:text-4xl font-Montserrat font-bold">
+            Adquira o New Detox e tenha acesso gratuito ao nosso App
+            Personalizado!
+          </h1>
+          <p className="font-Poppins text-center sm:text-left text-xl font-light">
+            Pensado como uma forma de instruir e elevar os resultados de nossos
+            clientes, nós da equipe New Detox desenvolvemos um{" "}
+            <span className="font-bold">
+              aplicativo personalizado totalmente gratuito.{" "}
+            </span>
+          </p>
+          <div className="flex w-32 items-center justify-center sm:justify-start">
+            <img
+              src="https://newdetox.com.br/wp-content/uploads/2023/10/appstore-new.webp"
+              alt=""
+              className="transition ease-in-out hover:scale-105 active:scale-95"
+            />
+            <img
+              src="https://newdetox.com.br/wp-content/uploads/2023/10/google-play-new.webp"
+              alt=""
+              className="transition ease-in-out hover:scale-105 active:scale-95"
+            />
+          </div>
+        </div>
+        <div className="col-span-12 sm:col-span-5">
+          <img
+            src="https://newdetox.com.br/wp-content/uploads/2023/10/new-detx-app-scaled.webp"
+            alt=""
+            className="w-full "
+          />
+        </div>
+        <div className="col-span-1" />
+      </div>
+
       <div className="col-span-12 grid grid-cols-12 gap-5 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-1" />
         <div className="col-span-10 py-10">
@@ -671,10 +730,7 @@ export default function Home() {
               </h1>
             </div>
             <div>
-              <img
-                src="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                alt=""
-              />
+              <img src={Caps5} alt="" />
             </div>
           </div>
           <div className="flex items-center justify-center gap-2 text-center p-2 bg-[#ECFF00] text-black  font-semibold">
@@ -682,11 +738,20 @@ export default function Home() {
             FRETE GRÁTIS
           </div>
           <div className="flex flex-col items-center justify-center">
-            <button className="w-2/3 p-2 mt-5 mb-2 bg-[#00A417] text-white font-extrabold text-md uppercase  transition ease-in-out hover:scale-105 active:scale-95">
+            <a
+              target="_blank"
+              rel="noopener"
+              className="w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
+              href="https://app.monetizze.com.br/checkout/DFW247655"
+            >
               comprar agora
-            </button>
+            </a>
             <img
-              className="w-32 mb-5"
+              src="https://dermodiet.com.br/wp-content/uploads/2023/12/formas-de-pg.webp"
+              className="w-40 mb-2"
+            />
+            <img
+              className="w-44 mb-5"
               src="https://newdetox.com.br/wp-content/uploads/2023/02/selos-de-compra.png"
               alt=""
             />
@@ -722,10 +787,7 @@ export default function Home() {
               </h1>
             </div>
             <div>
-              <img
-                src="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                alt=""
-              />
+              <img src={Caps4} alt="" />
             </div>
           </div>
           <div className="flex items-center justify-center gap-2 text-center p-2 bg-[#ECFF00] text-black  font-semibold">
@@ -733,11 +795,20 @@ export default function Home() {
             FRETE GRÁTIS
           </div>
           <div className="flex flex-col items-center justify-center">
-            <button className="w-2/3 p-2 mt-5 mb-2 bg-[#00A417]  text-white font-extrabold text-md uppercase  transition ease-in-out hover:scale-105 active:scale-95">
+            <a
+              target="_blank"
+              rel="noopener"
+              className="w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
+              href="https://app.monetizze.com.br/checkout/DUQ247652"
+            >
               comprar agora
-            </button>
+            </a>
             <img
-              className="w-32 mb-5"
+              src="https://dermodiet.com.br/wp-content/uploads/2023/12/formas-de-pg.webp"
+              className="w-40 mb-2"
+            />
+            <img
+              className="w-44 mb-5"
               src="https://newdetox.com.br/wp-content/uploads/2023/02/selos-de-compra.png"
               alt=""
             />
@@ -778,10 +849,7 @@ export default function Home() {
                 </h1>
               </div>
               <div>
-                <img
-                  src="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                  alt=""
-                />
+                <img src={Caps3} alt="" />
               </div>
             </div>
             <div className="flex items-center justify-center gap-2 text-center p-2 bg-[#ECFF00] text-black  font-semibold">
@@ -789,11 +857,20 @@ export default function Home() {
               FRETE GRÁTIS
             </div>
             <div className="flex flex-col items-center justify-center">
-              <button className="w-2/3 p-2 mt-5 mb-2 bg-[#00A417]  text-white font-extrabold text-md uppercase  transition ease-in-out hover:scale-105 active:scale-95">
+              <a
+                target="_blank"
+                rel="noopener"
+                className="w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
+                href="https://app.monetizze.com.br/checkout/DZN247651"
+              >
                 comprar agora
-              </button>
+              </a>
               <img
-                className="w-32 mb-5"
+                src="https://dermodiet.com.br/wp-content/uploads/2023/12/formas-de-pg.webp"
+                className="w-40 mb-2"
+              />
+              <img
+                className="w-44 mb-5"
                 src="https://newdetox.com.br/wp-content/uploads/2023/02/selos-de-compra.png"
                 alt=""
               />
@@ -831,10 +908,7 @@ export default function Home() {
                 </h1>
               </div>
               <div>
-                <img
-                  src="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                  alt=""
-                />
+                <img src={Caps2} alt="" />
               </div>
             </div>
             <div className="flex items-center justify-center gap-2 text-center p-2 bg-[#ECFF00] text-black  font-semibold">
@@ -842,11 +916,20 @@ export default function Home() {
               FRETE GRÁTIS
             </div>
             <div className="flex flex-col items-center justify-center">
-              <button className="w-2/3 p-2 mt-5 mb-2 bg-[#00A417]  text-white font-extrabold text-md uppercase  transition ease-in-out hover:scale-105 active:scale-95">
+              <a
+                target="_blank"
+                rel="noopener"
+                className="w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
+                href="https://app.monetizze.com.br/checkout/DTF247649"
+              >
                 comprar agora
-              </button>
+              </a>
               <img
-                className="w-32 mb-5"
+                src="https://dermodiet.com.br/wp-content/uploads/2023/12/formas-de-pg.webp"
+                className="w-40 mb-2"
+              />
+              <img
+                className="w-44 mb-5"
                 src="https://newdetox.com.br/wp-content/uploads/2023/02/selos-de-compra.png"
                 alt=""
               />
@@ -884,10 +967,7 @@ export default function Home() {
                 </h1>
               </div>
               <div>
-                <img
-                  src="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                  alt=""
-                />
+                <img src={Caps1} alt="" />
               </div>
             </div>
             <div className="flex items-center justify-center gap-2 text-center p-2 bg-[#ECFF00] text-black  font-semibold">
@@ -895,11 +975,20 @@ export default function Home() {
               FRETE GRÁTIS
             </div>
             <div className="flex flex-col items-center justify-center">
-              <button className="w-2/3 p-2 mt-5 mb-2 bg-[#00A417]  text-white font-extrabold text-md uppercase  transition ease-in-out hover:scale-105 active:scale-95">
+              <a
+                target="_blank"
+                rel="noopener"
+                className="w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
+                href="https://app.monetizze.com.br/checkout/DBZ247599"
+              >
                 comprar agora
-              </button>
+              </a>
               <img
-                className="w-32 mb-5"
+                src="https://dermodiet.com.br/wp-content/uploads/2023/12/formas-de-pg.webp"
+                className="w-40 mb-2"
+              />
+              <img
+                className="w-44 mb-5"
                 src="https://newdetox.com.br/wp-content/uploads/2023/02/selos-de-compra.png"
                 alt=""
               />
@@ -910,6 +999,7 @@ export default function Home() {
           <div className="col-span-12 h-24" />
         </div>
       </div>
+
       <div className="col-span-12 grid grid-cols-12 pb-8 bg-gradient-to-l from-green-800 via-green-700 to-lime-300/80">
         <div className="col-span-1" />
         <div className="col-span-5 hidden sm:flex items-center justify-center ">
@@ -950,6 +1040,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="col-span-12 grid grid-cols-12 gap-5  mb-10 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-10">
           <p className=" w-full text-center font-Montserrat leading-none font-bold text-4xl mt-10 text-green-700">
@@ -1026,6 +1117,12 @@ export default function Home() {
               mínimo 3 meses para um resultado surpreendente.
             </AccordionDetails>
           </Accordion>
+
+          <p className="text-center mt-10">
+            New Detox deve ser tomado diariamente, 2 cápsulas por dia,
+            preferencialmente antes das refeições. Recomendamos o uso por no
+            mínimo 3 meses para um resultado surpreendente.
+          </p>
         </div>
         <div className="col-span-1 sm:col-span-3" />
       </div>
