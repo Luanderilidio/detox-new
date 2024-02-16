@@ -8,9 +8,16 @@ import {
   AccordionActions,
   AccordionDetails,
   AccordionSummary,
+  Box,
   Button,
+  Card,
+  CardMedia,
   Container,
+  Dialog,
   Link,
+  SpeedDial,
+  SpeedDialAction,
+  SpeedDialIcon,
 } from "@mui/material";
 import "animate.css";
 
@@ -21,7 +28,7 @@ import { Notification } from "../../components/notification";
 import CardYoutube from "../../components/cardDepoiments";
 import CardCompose from "../../components/cardCompose";
 import { data } from "../../components/cardCompose/data";
-import { LogosContainer, LogosSlide } from "../../utils/Carrousel";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import Caps1 from "../../assets/caps/1-app-1.png";
 import Caps2 from "../../assets/caps/2-app-e.png";
@@ -45,11 +52,14 @@ import { CardDepoiments2 } from "../../components/cardDepoiments2";
 import { Footer } from "../../components/Footer";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className="w-full grid grid-cols-12 relative">
       {/* <Notification /> */}
       <div className=" col-span-12"></div>
-
       <div className="col-span-12 p-5 border-b-2 border-green-500 flex items-center justify-center">
         <img
           className="w-32 sm:w-40"
@@ -184,7 +194,7 @@ export default function Home() {
 
           <div className="flex sm:hidden col-span-1" />
           <div className="col-span-10 sm:col-span-4 flex flex-col items-center justify-center my-5 sm:my-0">
-            <div className="relative">
+            <div onClick={handleOpen} className="relative">
               <img
                 src="https://newdetox.com.br/wp-content/uploads/2022/11/nicole_bahls-1.webp"
                 className="object-cover object-center w-96 h-80 sm:h-96 rounded-3xl shadow-2xl shadow-black"
@@ -196,6 +206,23 @@ export default function Home() {
                 alt=""
               />
             </div>
+            <Dialog
+              maxWidth="xs"
+              sx={{ borderRadius: 24 }}
+              fullWidth
+              open={open}
+              onClose={handleClose}
+            >
+              <Card>
+                <CardMedia
+                  component="video"
+                  autoPlay
+                  controls
+                  className="h-fit"
+                  image="https://newdetox.com.br/wp-content/uploads/2022/11/FullSizeRender.mov"
+                />
+              </Card>
+            </Dialog>
             <div className="flex flex-col mt-6 w-full">
               <button className="w-full sm:w-96 p-3 bg-white border-b-4 border-lime-500 text-black font-extrabold text-md uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
                 QUERO UM CORPO NOVO
@@ -355,7 +382,7 @@ export default function Home() {
             />
           </div>
         </div>
-        
+
         <div className="col-span-12 sm:col-span-5">
           <img
             src="https://newdetox.com.br/wp-content/uploads/2023/10/new-detx-app-scaled.webp"
@@ -801,6 +828,7 @@ export default function Home() {
         <div className="col-span-1 sm:col-span-3" />
       </div>
       <Footer />
+      
     </div>
   );
 }
