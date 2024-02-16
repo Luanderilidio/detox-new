@@ -48,11 +48,12 @@ export function CardNews(props: any) {
       }}
       loop={true}
       spaceBetween={30}
-      pagination={{
-        dynamicBullets: true,
-      }}
+      // pagination={{
+      //   dynamicBullets: false,
+      //   enabled: true
+      // }}
       slidesPerView={1}
-      modules={[Pagination, Autoplay]}
+      modules={[ Autoplay]}
       className="mySwiper !bg-transparent"
     >
       {props.images.map((item: any, index: any) => (

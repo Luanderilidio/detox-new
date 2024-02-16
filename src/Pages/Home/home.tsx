@@ -42,215 +42,13 @@ import {
   images4,
 } from "../../components/cardNews";
 import { CardDepoiments2 } from "../../components/cardDepoiments2";
+import { Footer } from "../../components/Footer";
 
 export default function Home() {
   return (
     <div className="w-full grid grid-cols-12 relative">
-      <Notification />
-      <div className=" col-span-12">
-        <LogosContainer className=" hidden logos bg-transparent">
-          <LogosSlide className="logos-slide bg-transparent flex gap-5 w-fit border border-red-500">
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="yliEKAoKSwA"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="N8AFd03-GhQ"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="LkBLHTNEPXA"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="DfnH-IqwlhM"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="O7oX2by8fag"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="oA5edQXU26U"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="yliEKAoKSwA"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="N8AFd03-GhQ"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="LkBLHTNEPXA"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="DfnH-IqwlhM"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="O7oX2by8fag"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="oA5edQXU26U"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="yliEKAoKSwA"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="N8AFd03-GhQ"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="LkBLHTNEPXA"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="DfnH-IqwlhM"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="O7oX2by8fag"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-            <div className="w-48 col-span-2">
-              <CardYoutube
-                link="oA5edQXU26U"
-                brand="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"
-                avatar="https://yt3.ggpht.com/FykXtSExru4he9t629wEnUr0bzpznZVBDh3dY9PoNkjPicNr1SvP3IpNTiljNv8LufTUpjiL=s48-c-k-c0x00ffffff-no-rj"
-                creator="Depoimento"
-                brand_name="Detox New"
-                action="kit 4 Potes"
-                height="350px"
-              />
-            </div>
-          </LogosSlide>
-        </LogosContainer>
-      </div>
+      {/* <Notification /> */}
+      <div className=" col-span-12"></div>
 
       <div className="col-span-12 p-5 border-b-2 border-green-500 flex items-center justify-center">
         <img
@@ -291,7 +89,7 @@ export default function Home() {
               Quero um corpo novo
             </button>
             <div className="sm:w-96 flex items-center justify-center gap-2 mt-2">
-              <img src={LeaveIcon} alt="" className="w-4 text-green-700" />
+              <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
               <p className="font-Poppins font-light text-md">100% Natural</p>
             </div>
           </div>
@@ -307,14 +105,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="sm:h-screen col-span-12 grid py-10 sm:py-0 grid-cols-12 bg-gradient-to-l from-green-500 via-green-700 to-green-900 text-white">
+      <div className="sm:h-screen col-span-12 grid py-10 sm:py-0 grid-cols-12 bg-gradient-to-l from-green-600 via-green-700 to-green-900 text-white">
         <div className="col-span-1" />
         <div className="col-span-10 sm:col-span-5 flex flex-col items-center justify-center gap-5">
           <h1 className="w-full text-center sm:text-left text-4xl sm:text-5xl font-Montserrat font-bold">
             Como New Detox <br className="hidden sm:flex" />
             te faz emagrecer?
           </h1>
-          <p className="font-Poppins text-center sm:text-left text-xl font-light">
+          <p className="font-Poppins text-center sm:text-left text-lg sm:text-xl  leading-tight font-light">
             New Detox reúne todos os ingredientes de uma receita na medida
             certa. Tudo isso feito com tecnologia avançada, que te fará
             emagrecer muito mais rápido. Você não precisará ter o trabalho de
@@ -345,10 +143,12 @@ export default function Home() {
           <h1 className="w-full text-center sm:text-left text-4xl sm:text-5xl font-Montserrat font-bold text-green-700">
             Você mais magra <br /> e disposta em <br /> poucas semanas
           </h1>
-          <p className="font-Poppins text-xl text-center sm:text-left font-light">
-            New Detox é um poderoso suplemento que acelera o seu metabolismo,
-            diminui o inchaço e a retenção, elimina as substâncias inflamatórias
-            e te faz emagrecer de forma rápida, saudável e definitiva.
+          <p className="font-Poppins text-lg sm:text-xl leading-tight text-center sm:text-left font-light">
+            New Detox é um{" "}
+            <span className="font-bold  text-green-900">poderoso</span>{" "}
+            suplemento que acelera o seu metabolismo, diminui o inchaço e a
+            retenção, elimina as substâncias inflamatórias e te faz emagrecer de
+            forma rápida, saudável e definitiva.
           </p>
           <img
             src="https://newdetox.com.br/wp-content/uploads/2023/08/Imagem-Nicole-Bahls-Criativo-1.webp"
@@ -360,7 +160,7 @@ export default function Home() {
               comprar agora
             </button>
             <div className="w-full flex items-center justify-center gap-2 mt-2">
-              <img src={LeaveIcon} alt="" className="w-4 text-green-700" />
+              <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
               <p className="font-Poppins font-light text-md">100% Natural</p>
             </div>
           </div>
@@ -368,7 +168,7 @@ export default function Home() {
         <div className="col-span-1" />
       </div>
 
-      <div className=" col-span-12 grid grid-cols-12 pb-20 bg-gradient-to-l from-green-900 via-green-700 to-lime-500/80 text-white">
+      <div className=" col-span-12 grid grid-cols-12 pb-20 bg-gradient-to-l from-green-900 via-green-700 to-green-600 text-white">
         <div className="col-span-12 py-10">
           <p className=" w-full text-center font-Montserrat font-bold text-4xl  text-white">
             Quem já experimentou <br /> emagreceu e recomenda!
@@ -448,7 +248,7 @@ export default function Home() {
         <div className="sm:hidden col-span-1" />
       </div> */}
 
-      <div className=" col-span-12 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
+      <div className=" col-span-12 grid grid-cols-12 pb-10 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-14">
           <p className=" w-full text-center font-Montserrat font-bold text-3xl mt-10 text-green-700">
             Conheça a formulação do New Detox
@@ -465,133 +265,6 @@ export default function Home() {
               key={index}
             />
           ))}
-          {/* <div className="col-span-4 sm:col-span-1 flex flex-col justify-start items-start rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T163958.509.webp"
-              alt=""
-              className=""
-            />
-            <div className="p-5 ">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700">
-                Ágar-agar
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                Tem uma ação diurética, ajuda o corpo a eliminar líquidos,
-                reduz, e previne a celulite de forma muito eficaz.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-4 sm:col-span-1 bg-white flex flex-col gap-3 rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T164629.765.webp"
-              alt=""
-            />
-            <div className="p-5">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700">
-                Psyllium
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                Em contato com a água, a semente aumenta de tamanho, formando um
-                “bolo” que, ao ser consumido, garante saciedade.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-4 sm:col-span-1 bg-white flex flex-col gap-3 rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30  ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T164819.648-1.webp"
-              alt=""
-            />
-            <div className="p-5">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700">
-                Espirulina
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                Aumenta a saciedade devido à sua alta concentração de proteínas
-                e nutrientes, fazendo com que o corpo funcione melhor.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-4 sm:col-span-1 bg-white flex flex-col gap-3 rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30  ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T165135.090.webp"
-              alt=""
-            />
-
-            <div className="p-5">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700 leading-none">
-                Fibra de beterraba
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                Contribui para o emagrecimento, devido à quantidade de fibras,
-                que atuam no trato gastrointestinal, ajudando na absorção e na
-                eliminação de parte das gorduras ingeridas.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-4 sm:col-span-1 bg-white flex flex-col gap-3 rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T165539.083.webp"
-              alt=""
-            />
-            <div className="p-5">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700">
-                Chlorella Vulgaris
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                A chlorella é uma aliada no processo de emagrecimento devido à
-                sua alta quantidade de fibras que proporcionam saciedade e
-                auxiliam no controle dos picos glicêmicos.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-4 sm:col-span-1 bg-white flex flex-col gap-3 rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T165351.181.webp"
-              alt=""
-            />
-            <div className="p-5">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700">
-                Cromo
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                Faz com que o organismo utilize mais carboidratos como fonte de
-                energia e absorva mais proteínas ajudando no de massa muscular e
-                perda de peso, principalmente na região abdominal.
-              </p>
-            </div>
-          </div>
-          <div className="bg-white col-span-4 sm:col-span-1  flex flex-col gap-3 rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Screenshot_350.webp"
-              alt=""
-            />
-            <div className="p-5">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700">
-                Laranja Moro
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                Benefício importante da laranja Moro para o emagrecimento é sua
-                capacidade de proporcionar uma sensação de saciedade, auxiliando
-                na perca de peso.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-4 sm:col-span-1 bg-white flex flex-col gap-3 rounded-b-2xl transition ease-in-out shadow-lg hover:drop-shadow-xl shadow-black/30 ">
-            <img
-              src="https://newdetox.com.br/wp-content/uploads/2023/08/Design-sem-nome-2023-08-30T170243.713.webp"
-              alt=""
-            />
-            <div className="p-5">
-              <h1 className="font-Montserrat font-bold text-2xl text-green-700">
-                Inulina
-              </h1>
-              <p className="font-Poppins text-md font-light leading-none mt-2">
-                A inulina pode emagrecer por formar um tipo de gel no estômago,
-                que aumenta o tempo de digestão dos alimentos, prolongando a
-                sensação de saciedade e diminuindo a fome.
-              </p>
-            </div>
-          </div> */}
           <div className="col-span-4">
             <div className="flex items-center justify-center gap-2 mt-2">
               <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
@@ -655,9 +328,9 @@ export default function Home() {
         <div className="sm:hidden col-span-1" />
       </div>
 
-      <div className="col-span-12 grid py-10 mt-10 grid-cols-12 bg-gradient-to-l from-green-500 via-green-700 to-green-900 text-white">
+      <div className="col-span-12 grid py-10 grid-cols-12 bg-gradient-to-l from-green-500 via-green-700 to-green-900 text-white">
         <div className="col-span-1" />
-        <div className="col-span-10 sm:col-span-5 flex flex-col items-center justify-center sm:items-start sm:justify-start gap-5">
+        <div className="col-span-12 sm:col-span-5 flex flex-col items-center justify-center sm:items-start sm:justify-start gap-5">
           <h1 className="w-full text-center sm:text-left text-3xl sm:text-4xl font-Montserrat font-bold">
             Adquira o New Detox e tenha acesso gratuito ao nosso App
             Personalizado!
@@ -682,6 +355,7 @@ export default function Home() {
             />
           </div>
         </div>
+        
         <div className="col-span-12 sm:col-span-5">
           <img
             src="https://newdetox.com.br/wp-content/uploads/2023/10/new-detx-app-scaled.webp"
@@ -704,7 +378,7 @@ export default function Home() {
 
         <div className="col-span-1 sm:col-span-3" />
         <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl ">
-          <div className="p-4 bg-green-800 text-center rounded-t-2xl">
+          <div className="p-4 bg-gradient-to-l from-green-700 via-green-700 to-green-600 text-center rounded-t-2xl">
             <h1 className="font-semibold text-white text-xl">COMPRE 5 POTES</h1>
             <h1 className="font-extrabold text-[#ECFF00] text-2xl leading-none">
               LEVE O 6º GRÁTIS + <br /> EBOOK + APP
@@ -761,7 +435,7 @@ export default function Home() {
 
         <div className="col-span-1 sm:hidden" />
         <div className=" col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
-          <div className="p-4 bg-green-800 text-center rounded-t-2xl">
+          <div className="p-4 bg-gradient-to-l from-green-700 via-green-700 to-green-600 text-center rounded-t-2xl">
             <h1 className="font-semibold text-white text-xl">COMPRE 4 POTES</h1>
             <h1 className="font-extrabold text-[#ECFF00] text-2xl leading-none">
               LEVE O 5º GRÁTIS + <br /> EBOOK + APP
@@ -821,7 +495,7 @@ export default function Home() {
         <div className="col-span-12 grid grid-cols-12 sm:grid-cols-11 gap-5 mt-5">
           <div className="col-span-1" />
           <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
-            <div className="p-4 bg-green-800 text-center rounded-t-2xl">
+            <div className="p-4 bg-gradient-to-l from-green-700 via-green-700 to-green-600 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 3 POTES
               </h1>
@@ -880,7 +554,7 @@ export default function Home() {
 
           <div className="col-span-1 sm:hidden" />
           <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
-            <div className="p-4 bg-green-800 text-center rounded-t-2xl">
+            <div className="p-4 bg-gradient-to-l from-green-700 via-green-700 to-green-600 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 2 POTES
               </h1>
@@ -939,7 +613,7 @@ export default function Home() {
 
           <div className="col-span-1 sm:hidden" />
           <div className="col-span-10 sm:col-span-3 border bg-white border-slate-600 transition ease-in-out hover:scale-105 rounded-2xl">
-            <div className="p-4 bg-green-800 text-center rounded-t-2xl">
+            <div className="p-4 bg-gradient-to-l from-green-700 via-green-700 to-green-600 text-center rounded-t-2xl">
               <h1 className="font-semibold text-white text-xl">
                 COMPRE 1 POTE
               </h1>
@@ -1000,7 +674,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="col-span-12 grid grid-cols-12 pb-8 bg-gradient-to-l from-green-800 via-green-700 to-lime-300/80">
+      <div className="col-span-12 grid grid-cols-12 pb-8 bg-gradient-to-l from-green-800 via-green-700 to-green-500 ">
         <div className="col-span-1" />
         <div className="col-span-5 hidden sm:flex items-center justify-center ">
           <img
@@ -1041,7 +715,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="col-span-12 grid grid-cols-12 gap-5  mb-10 bg-gradient-to-l from-green-200 via-white to-white">
+      <div className="col-span-12 grid grid-cols-12 gap-5  pb-10 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-10">
           <p className=" w-full text-center font-Montserrat leading-none font-bold text-4xl mt-10 text-green-700">
             Ainda com <br className="flex sm:hidden" /> dúvidas?
@@ -1051,8 +725,8 @@ export default function Home() {
         <div className="col-span-10 sm:col-span-6 flex flex-col gap-3">
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon sx={{ color: "#15803d" }} />
-              <p className="font-bold text-green-700">
+              <QuestionMarkIcon className="text-lime-500" />
+              <p className="font-bold text-lime-500">
                 QUAIS OS EFEITOS DO NEW DETOX?
               </p>
             </AccordionSummary>
@@ -1065,8 +739,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon sx={{ color: "#15803d" }} />
-              <p className="font-bold text-green-700">
+              <QuestionMarkIcon className="text-lime-500" />
+              <p className="font-bold text-lime-500">
                 QUANTOS KG CONSIGO EMAGRECER COM NEW DETOX?
               </p>
             </AccordionSummary>
@@ -1077,8 +751,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon sx={{ color: "#15803d" }} />
-              <p className="font-bold text-green-700">
+              <QuestionMarkIcon className="text-lime-500" />
+              <p className="font-bold text-lime-500">
                 QUAL O PRAZO DA ENTREGA?
               </p>
             </AccordionSummary>
@@ -1091,8 +765,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon sx={{ color: "#15803d" }} />
-              <p className="font-bold text-green-700">
+              <QuestionMarkIcon className="text-lime-500" />
+              <p className="font-bold text-lime-500">
                 EXISTEM EFEITOS COLATERAIS? QUALQUER UM PODE TOMAR?
               </p>
             </AccordionSummary>
@@ -1106,8 +780,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon sx={{ color: "#15803d" }} />
-              <p className="font-bold text-green-700">
+              <QuestionMarkIcon className="text-lime-500" />
+              <p className="font-bold text-lime-500">
                 COMO DEVO USAR NEW DETOX?{" "}
               </p>
             </AccordionSummary>
@@ -1126,6 +800,7 @@ export default function Home() {
         </div>
         <div className="col-span-1 sm:col-span-3" />
       </div>
+      <Footer />
     </div>
   );
 }

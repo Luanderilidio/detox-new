@@ -57,11 +57,9 @@ export function CardDepoiments2() {
       }}
       loop={true}
       spaceBetween={30}
-      pagination={{
-        dynamicBullets: true,
-      }}
+     
       slidesPerView={isMobile ? 2 : 5 }
-      modules={[Pagination, Autoplay]}
+      modules={[ Autoplay]}
       className="mySwiper !bg-transparent"
     >
       {images.map((item, index) => (

@@ -79,7 +79,7 @@ export default function CardCompose({
         )} */}
       </div>
       <div className="px-5 pb-5">
-        <h1 className="font-Montserrat font-bold text-2xl text-green-700">
+        <h1 className="font-Montserrat font-bold text-3xl text-green-700">
           {name}
         </h1>
         <p className="font-Poppins text-md font-light leading-none mt-2">
