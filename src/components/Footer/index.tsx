@@ -1,6 +1,8 @@
 import PersonIcon from "@mui/icons-material/Person";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Button, TextField } from "@mui/material";
+import PlaceIcon from "@mui/icons-material/Place";
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import ReactInputMask from "react-input-mask";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -27,38 +29,59 @@ const styleSX = {
 
 export function Footer() {
   return (
-    <div className="col-span-12 grid grid-cols-12 bg-neutral-900 text-white gap-10 border border-red-500 pt-8">
-      <div className="col-span-1" />
-      <div className="col-span-12 sm:col-span-3">
-        <h1 className="text-xl font-bold text-center mb-1">AVISO</h1>
-        <p className="text-center text-sm">
+    <div className="col-span-12 grid grid-cols-4 bg-neutral-900 text-white gap-10 pt-8 px-4">
+      <div className="col-span-4 sm:col-span-1 flex flex-col items-center justify-center">
+        <h1 className="w-fit first-letter:text-xl font-bold text-center mb-1">
+          AVISO
+        </h1>
+        <p className="text-center text-xs">
           This site is not part of the Facebook website or Facebook Inc.
           Additionally, this site is NOT endorsed by Facebook in any way.
           FACEBOOK is a trademark of FACEBOOK, Inc.
         </p>
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://drive.google.com/file/d/1ROa_ydk8D2plbF-QOyDIxITDu6UG4xB4/view?usp=drivesdk"
+        >
+          <button className="font-Montserrat mt-5 w-fit p-2 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+            <PictureAsPdfIcon /> ALVARÁ - ANVISA
+          </button>
+        </a>
       </div>
-      <div className="col-span-12 sm:col-span-2">
+      <div className="col-span-4 sm:col-span-1 flex flex-col items-center">
         <h1 className="text-xl font-bold text-center mb-1">FALE CONOSCO</h1>
         <p className="text-center text-sm">
-          Fale conosco através dos nosso canais de atendimento: das 09h às 18h.
-          <br />
-          Telefone: (37) 3351-5181
-        </p>
-      </div>
-      <div className="col-span-12 sm:col-span-2 flex flex-col items-center justify-center">
-        <h1 className="text-xl font-bold text-center mb-1">RASTREIO</h1>
-        <p className="text-center text-sm">
-          Para rastrear o seu kit New Detox basta consultar no link abaixo:
+          Fale conosco através dos <br /> nosso canais de atendimento: <br />{" "}
+          das 09h às 18h. Telefone: (37) 3351-5181
         </p>
         <button className="font-Montserrat mt-5 w-fit p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
-          RASTREAR PEDIDO
+          <WhatsAppIcon /> FALAR COM ATENDENTE
         </button>
       </div>
-      <div className="col-span-12 sm:col-span-3 flex flex-col items-center justify-center">
+      <div className="col-span-4 sm:col-span-1 flex flex-col items-center justify-center">
+        <h1 className="text-xl font-bold text-center mb-1">RASTREIO</h1>
+        <p className="text-center text-sm">
+          Para rastrear o seu kit <br /> New Detox basta consultar no link
+          abaixo:
+        </p>
+        <button className="font-Montserrat mt-5 w-fit p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+          <PlaceIcon sx={{ fontSize: 15 }} /> RASTREAR PEDIDO
+        </button>
+      </div>
+      <div className="col-span-4 sm:col-span-1 flex flex-col items-center justify-center">
         <h1 className="text-xl font-bold text-center mb-1">SITE SEGURO</h1>
         <img
           src="https://newdetox.com.br/wp-content/uploads/2023/09/icons-siteseguro-1-1.png"
           alt=""
+        />
+        <img
+          src="https://cdn.plezstore.com.br/assets/img/security/site-seguro-blindado.png"
+          className="w-2/3"
+        />
+        <img
+          src="https://armasfronteira.com/wp-content/uploads/2022/08/dadosprotegidos.png"
+          className="w-2/3"
         />
         <a className="mt-3">
           <h1 className="underline font-bold">POLÍTICAS DE PRIVACIDADE</h1>
@@ -67,24 +90,10 @@ export function Footer() {
           <h1 className="underline font-bold">TERMOS DE USO</h1>
         </a>
       </div>
-      <div className="col-span-1 " />
-      <div className="col-span-1 " />
-      <div className="col-span-3">
-        <img
-          src="https://cdn.plezstore.com.br/assets/img/security/site-seguro-blindado.png"
-          className="w-full"
-        />
-        <img
-          src="https://armasfronteira.com/wp-content/uploads/2022/08/dadosprotegidos.png"
-          className="w-full"
-        />
-      </div>
-      <div className="col-span-3 hidden">
-        <img
-          src="https://brascontel.com.br/storage/2020/09/formas-de-pagamento-logos-co%CC%81pia.png"
-          className="w-full"
-        />
-      </div>
+
+      {/*
+      
+    
       <div className="col-span-5 hidden">
         <div>
           <h1 className="text-xl font-bold text-left mb-1">ENVIE SUA DÚVIDA</h1>
@@ -153,7 +162,7 @@ export function Footer() {
         <h1 className="text-lg font-normal leading-none">
           Todos os direitos reservados.
         </h1>
-      </div>
+      </div> */}
     </div>
   );
 }

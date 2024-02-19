@@ -2,7 +2,12 @@ import LeaveIcon from "../../assets/iconLeave.svg";
 import Freight from "../../assets/freight.svg";
 import LeaveIcon2 from "../../assets/leave2.svg";
 import Play from "../../assets/play.svg";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Video from "../../assets/FullSizeRender.mp4";
+import ContactSupportIcon from "@mui/icons-material/ContactSupport";
+import { Link } from "react-scroll";
+
 import {
   Accordion,
   AccordionActions,
@@ -12,9 +17,9 @@ import {
   Button,
   Card,
   CardMedia,
+  Collapse,
   Container,
   Dialog,
-  Link,
   SpeedDial,
   SpeedDialAction,
   SpeedDialIcon,
@@ -50,11 +55,20 @@ import {
 } from "../../components/cardNews";
 import { CardDepoiments2 } from "../../components/cardDepoiments2";
 import { Footer } from "../../components/Footer";
+import { FormsQuestion } from "../../components/FormsQuestion";
+import MasonryImageList from "../../components/grigDepoiments";
+import { backAndBefore, recebidos } from "../../components/grigDepoiments/data";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
 
   return (
     <div className="w-full grid grid-cols-12 relative">
@@ -94,10 +108,18 @@ export default function Home() {
               // allowfullscreen
             ></iframe>
           </div>
-          <div className="flex flex-col mt-5  !w-full">
-            <button className="font-Montserrat  sm:w-96 p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+          <div className="flex flex-col mt-5 !w-full">
+            <Link
+              activeClass="active"
+              to="pay"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={700}
+              className="font-Montserrat text-center sm:w-96 p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
+            >
               Quero um corpo novo
-            </button>
+            </Link>
             <div className="sm:w-96 flex items-center justify-center gap-2 mt-2">
               <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
               <p className="font-Poppins font-light text-md">100% Natural</p>
@@ -166,9 +188,17 @@ export default function Home() {
             className=" sm:hidden"
           />
           <div className="flex flex-col items-start justify-center mt-3 w-full  sm:w-96">
-            <button className="p-3 w-full sm:w-96 bg-green-700 border-b-4 border-lime-500 text-white font-Montserrat font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+            <Link
+              activeClass="active"
+              to="pay"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={700}
+              className=" p-3 w-full text-center sm:w-96 bg-green-700 border-b-4 border-lime-500 text-white font-Montserrat font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
+            >
               comprar agora
-            </button>
+            </Link>
             <div className="w-full flex items-center justify-center gap-2 mt-2">
               <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
               <p className="font-Poppins font-light text-md">100% Natural</p>
@@ -178,7 +208,7 @@ export default function Home() {
         <div className="col-span-1" />
       </div>
 
-      <div className=" col-span-12 grid grid-cols-12 pb-20 bg-gradient-to-l from-green-900 via-green-700 to-green-600 text-white">
+      <div className=" col-span-12 grid grid-cols-12  bg-gradient-to-l from-green-900 via-green-700 to-green-600 text-white">
         <div className="col-span-12 py-10">
           <p className=" w-full text-center font-Montserrat font-bold text-4xl  text-white">
             Quem já experimentou <br /> emagreceu e recomenda!
@@ -224,9 +254,17 @@ export default function Home() {
               </Card>
             </Dialog>
             <div className="flex flex-col mt-6 w-full">
-              <button className="w-full sm:w-96 p-3 bg-white border-b-4 border-lime-500 text-black font-extrabold text-md uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+              <Link
+                activeClass="active"
+                to="pay"
+                spy={true}
+                smooth={true}
+                offset={20}
+                duration={700}
+                className="w-full text-center sm:w-96 p-3 bg-white border-b-4 border-lime-500 text-black font-extrabold text-md uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30 !z-50"
+              >
                 QUERO UM CORPO NOVO
-              </button>
+              </Link>
               <div className="flex items-center justify-center gap-2 mt-2">
                 <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
                 <p className="font-light text-md">100% Natural</p>
@@ -251,31 +289,26 @@ export default function Home() {
         <div className="col-span-12">
           <CardDepoiments2 />
         </div>
-      </div>
-
-      {/* <div className=" col-span-12 grid grid-cols-12 bg-gradient-to-l from-green-200 via-white to-white">
-        <div className="col-span-12 py-14">
-          <p className=" w-full text-center font-Montserrat font-bold text-3xl mt-10 text-green-700">
-            Veja oque falam sobre o Detox
-          </p>
-        </div>
-        <div className="col-span-1" />
-        <div className="col-span-10">
-          <CardNews />
-        </div>
-        <div className="col-span-1" />
-        <div className="sm:hidden col-span-1" />
-        <div className="col-span-10 sm:col-span-12">
-          <div className="flex items-center justify-center flex-col mt-6 w-full ">
-            <button className="w-full sm:w-96 p-3 bg-green-700 border-b-4 border-lime-500 text-white font-extrabold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
-              100% NATURAL E EFICAZ!
+        <div className="col-span-12">
+          <div className="px-5 mb-5">
+            <button
+              onClick={handleExpandClick}
+              className="w-full flex items-center justify-center sm:w-96 p-3 bg-white border-b-4 border-lime-500 text-black font-extrabold text-md uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
+            >
+              veja antes e depois{" "}
+              {expanded ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             </button>
           </div>
-        </div>
-        <div className="sm:hidden col-span-1" />
-      </div> */}
 
-      <div className=" col-span-12 grid grid-cols-12 pb-10 bg-gradient-to-l from-green-200 via-white to-white">
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <div className="overflow-y-scroll h-[500px]">
+              <MasonryImageList images={backAndBefore} />
+            </div>
+          </Collapse>
+        </div>
+      </div>
+
+      <div className=" col-span-12 grid grid-cols-12  bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-14">
           <p className=" w-full text-center font-Montserrat font-bold text-3xl mt-10 text-green-700">
             Conheça a formulação do New Detox
@@ -343,9 +376,17 @@ export default function Home() {
 
         <div className="col-span-10 sm:col-span-12">
           <div className="flex items-center justify-center flex-col mt-6 w-full ">
-            <button className="w-full sm:w-96 p-3 bg-green-700 border-b-4 border-lime-500 text-white font-extrabold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+            <Link
+              activeClass="active"
+              to="pay"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={700}
+              className="w-full sm:w-96 text-center p-3 bg-green-700 border-b-4 border-lime-500 text-white font-extrabold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30 !z-50"
+            >
               QUERO UMA VIDA NOVA
-            </button>
+            </Link>
             <div className="flex items-center justify-center gap-2 mt-2">
               <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
               <p className="font-light text-md">100% Natural</p>
@@ -355,7 +396,7 @@ export default function Home() {
         <div className="sm:hidden col-span-1" />
       </div>
 
-      <div className="col-span-12 grid py-10 grid-cols-12 bg-gradient-to-l from-green-500 via-green-700 to-green-900 text-white">
+      <div className="hidden col-span-12 grid py-10 grid-cols-12 bg-gradient-to-l from-green-500 via-green-700 to-green-900 text-white">
         <div className="col-span-1" />
         <div className="col-span-12 sm:col-span-5 flex flex-col items-center justify-center sm:items-start sm:justify-start gap-5">
           <h1 className="w-full text-center sm:text-left text-3xl sm:text-4xl font-Montserrat font-bold">
@@ -393,7 +434,10 @@ export default function Home() {
         <div className="col-span-1" />
       </div>
 
-      <div className="col-span-12 grid grid-cols-12 gap-5 bg-gradient-to-l from-green-200 via-white to-white">
+      <div
+        id="pay"
+        className="col-span-12 grid grid-cols-12 gap-5 bg-gradient-to-l from-green-200 via-white to-white"
+      >
         <div className="col-span-1" />
         <div className="col-span-10 py-10">
           <p className=" w-full text-center font-Montserrat leading-none font-bold text-3xl sm:text-4xl mt-10 text-green-700">
@@ -411,7 +455,7 @@ export default function Home() {
               LEVE O 6º GRÁTIS + <br /> EBOOK + APP
             </h1>
           </div>
-          <h1 className="font-normal text-gray-500 text-xl text-center py-5">
+          <h1 className="font-normal text-gray-500 text-xl text-center pt-5">
             TRATAMENTO PARA 6 MESES
           </h1>
           <div className="flex items-start p-5">
@@ -468,7 +512,7 @@ export default function Home() {
               LEVE O 5º GRÁTIS + <br /> EBOOK + APP
             </h1>
           </div>
-          <h1 className="font-normal text-gray-500 text-xl text-center py-5">
+          <h1 className="font-normal text-gray-500 text-xl text-center pt-5">
             TRATAMENTO PARA 5 MESES
           </h1>
           <div className="flex items-start p-5">
@@ -530,7 +574,7 @@ export default function Home() {
                 LEVE O 4º GRÁTIS + <br /> EBOOK + APP
               </h1>
             </div>
-            <h1 className="font-normal text-gray-500 text-xl text-center py-5">
+            <h1 className="font-normal text-gray-500 text-xl text-center pt-5">
               TRATAMENTO PARA 4 MESES
             </h1>
             <div className="flex items-start p-5">
@@ -589,7 +633,7 @@ export default function Home() {
                 LEVE O 3º GRÁTIS + <br /> EBOOK + APP
               </h1>
             </div>
-            <h1 className="font-normal text-gray-500 text-xl text-center py-5">
+            <h1 className="font-normal text-gray-500 text-xl text-center pt-5">
               TRATAMENTO COMPLETO
             </h1>
             <div className="flex items-start p-5">
@@ -648,7 +692,7 @@ export default function Home() {
                 LEVE O 2º GRÁTIS + <br /> EBOOK + APP
               </h1>
             </div>
-            <h1 className="font-normal text-gray-500 text-xl text-center py-5">
+            <h1 className="font-normal text-gray-500 text-xl text-center pt-5">
               TRATAMENTO PARA 2 MESES
             </h1>
             <div className="flex items-start px-5 pt-5">
@@ -679,7 +723,7 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noopener"
-                className="w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
+                className="w-2/3 p-2 mt-5 mb-2  bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
                 href="https://app.monetizze.com.br/checkout/DBZ247599"
               >
                 comprar agora
@@ -697,8 +741,23 @@ export default function Home() {
           </div>
           <div className="col-span-1 sm:hidden" />
 
-          <div className="col-span-12 h-24" />
+        
         </div>
+      </div>
+
+      <div className="h-full col-span-12 grid grid-cols-12 pb-8 bg-gradient-to-l from-green-200 via-white to-white ">
+        <div className="col-span-1" />
+        <div className="col-span-10 py-10">
+          <p className=" w-full text-center font-Montserrat   text-green-700 leading-none font-bold text-3xl sm:text-4xl mt-10">
+            APROVEITE O FRETE GRATIS
+            <br className="hidden sm:flex" /> E TENHA O CORPO DOS SONHOS
+          </p>
+        </div>
+        <div className="col-span-12 overflow-y-auto h-[600px]">
+          <MasonryImageList images={recebidos} />
+        </div>
+
+        <div className="col-span-1" />
       </div>
 
       <div className="col-span-12 grid grid-cols-12 pb-8 bg-gradient-to-l from-green-800 via-green-700 to-green-500 ">
@@ -728,9 +787,19 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col justify-start items-start gap-3">
             <div className="w-full flex flex-col justify-center ittems-center gap-3">
-              <button className="w-full sm:w-96 p-3 bg-white border-b-4 border-lime-500 text-black font-Montserrat font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+            <Link
+              activeClass="active"
+              to="pay"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={700}
+              className="w-full sm:w-96 p-3 text-center bg-white border-b-4 border-lime-500 text-black font-Montserrat font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
+            >
+
                 comprar com garantia
-              </button>
+            </Link>
+              
               <div className="w-full sm:w-96 flex items-center justify-center gap-2 ">
                 <img src={LeaveIcon2} alt="" className="w-4 text-green-700" />
                 <p className="font-Poppins font-light text-center text-md  text-white">
@@ -744,7 +813,7 @@ export default function Home() {
 
       <div className="col-span-12 grid grid-cols-12 gap-5  pb-10 bg-gradient-to-l from-green-200 via-white to-white">
         <div className="col-span-12 py-10">
-          <p className=" w-full text-center font-Montserrat leading-none font-bold text-4xl mt-10 text-green-700">
+          <p className=" w-full text-center font-Montserrat uppercase leading-none font-bold text-4xl mt-10 text-green-700">
             Ainda com <br className="flex sm:hidden" /> dúvidas?
           </p>
         </div>
@@ -752,8 +821,8 @@ export default function Home() {
         <div className="col-span-10 sm:col-span-6 flex flex-col gap-3">
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon className="text-lime-500" />
-              <p className="font-bold text-lime-500">
+              <ContactSupportIcon className="text-lime-600" />
+              <p className="font-bold text-lime-600">
                 QUAIS OS EFEITOS DO NEW DETOX?
               </p>
             </AccordionSummary>
@@ -766,8 +835,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon className="text-lime-500" />
-              <p className="font-bold text-lime-500">
+              <ContactSupportIcon className="text-lime-600" />
+              <p className="font-bold text-lime-600">
                 QUANTOS KG CONSIGO EMAGRECER COM NEW DETOX?
               </p>
             </AccordionSummary>
@@ -778,8 +847,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon className="text-lime-500" />
-              <p className="font-bold text-lime-500">
+              <ContactSupportIcon className="text-lime-600" />
+              <p className="font-bold text-lime-600">
                 QUAL O PRAZO DA ENTREGA?
               </p>
             </AccordionSummary>
@@ -792,8 +861,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon className="text-lime-500" />
-              <p className="font-bold text-lime-500">
+              <ContactSupportIcon className="text-lime-600" />
+              <p className="font-bold text-lime-600">
                 EXISTEM EFEITOS COLATERAIS? QUALQUER UM PODE TOMAR?
               </p>
             </AccordionSummary>
@@ -807,8 +876,8 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <QuestionMarkIcon className="text-lime-500" />
-              <p className="font-bold text-lime-500">
+              <ContactSupportIcon className="text-lime-600" />
+              <p className="font-bold text-lime-600">
                 COMO DEVO USAR NEW DETOX?{" "}
               </p>
             </AccordionSummary>
@@ -818,7 +887,7 @@ export default function Home() {
               mínimo 3 meses para um resultado surpreendente.
             </AccordionDetails>
           </Accordion>
-
+          <FormsQuestion />
           <p className="text-center mt-10">
             New Detox deve ser tomado diariamente, 2 cápsulas por dia,
             preferencialmente antes das refeições. Recomendamos o uso por no
@@ -828,7 +897,6 @@ export default function Home() {
         <div className="col-span-1 sm:col-span-3" />
       </div>
       <Footer />
-      
     </div>
   );
 }
