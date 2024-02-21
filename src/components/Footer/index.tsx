@@ -29,12 +29,12 @@ const styleSX = {
 
 export function Footer() {
   return (
-    <div className="col-span-12 grid grid-cols-4 bg-neutral-900 text-white gap-10 pt-8 px-4">
-      <div className="col-span-4 sm:col-span-1 flex flex-col items-center justify-center">
+    <div className="col-span-12 grid grid-cols-4 bg-neutral-900 text-white gap-10 pt-8 px-0">
+      <div className="col-span-4 sm:col-span-1 flex flex-col items-center justify-start">
         <h1 className="w-fit first-letter:text-xl font-bold text-center mb-1">
           AVISO
         </h1>
-        <p className="text-center text-xs">
+        <p className="text-center text-xs px-4  ">
           This site is not part of the Facebook website or Facebook Inc.
           Additionally, this site is NOT endorsed by Facebook in any way.
           FACEBOOK is a trademark of FACEBOOK, Inc.
@@ -44,7 +44,7 @@ export function Footer() {
           rel="noopener"
           href="https://drive.google.com/file/d/1ROa_ydk8D2plbF-QOyDIxITDu6UG4xB4/view?usp=drivesdk"
         >
-          <button className="font-Montserrat mt-5 w-fit p-2 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+          <button className="font-Montserrat mt-5 w-fit p-2 bg-gradient-to-l from-green-700 via-green-700 to-green-800 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
             <PictureAsPdfIcon /> ALVARÁ - ANVISA
           </button>
         </a>
@@ -55,9 +55,16 @@ export function Footer() {
           Fale conosco através dos <br /> nosso canais de atendimento: <br />{" "}
           das 09h às 18h. Telefone: (37) 3351-5181
         </p>
-        <button className="font-Montserrat mt-5 w-fit p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://api.whatsapp.com/send?phone=5565998201684&text=Ol%C3%A1,%20quero%20tirar%20algumas%20d%C3%BAvidas%20*fico%20no%20aguardo*."
+        >
+
+        <button className="font-Montserrat mt-5 w-fit p-3 bg-gradient-to-l from-green-700 via-green-700 to-green-800 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
           <WhatsAppIcon /> FALAR COM ATENDENTE
         </button>
+        </a>
       </div>
       <div className="col-span-4 sm:col-span-1 flex flex-col items-center justify-center">
         <h1 className="text-xl font-bold text-center mb-1">RASTREIO</h1>
@@ -65,9 +72,16 @@ export function Footer() {
           Para rastrear o seu kit <br /> New Detox basta consultar no link
           abaixo:
         </p>
-        <button className="font-Montserrat mt-5 w-fit p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://pedidos.capsulbrasil.com.br/tracking"
+        >
+
+        <button className="font-Montserrat mt-5 w-fit p-3 bg-gradient-to-l from-green-700 via-green-700 to-green-800 border-b-4 border-lime-500 text-white font-bold text-xs uppercase rounded-xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30">
           <PlaceIcon sx={{ fontSize: 15 }} /> RASTREAR PEDIDO
         </button>
+        </a>
       </div>
       <div className="col-span-4 sm:col-span-1 flex flex-col items-center justify-center">
         <h1 className="text-xl font-bold text-center mb-1">SITE SEGURO</h1>
@@ -155,14 +169,15 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="col-span-12 py-2 flex flex-col sm:flex-row sm:gap-2 items-center justify-center bg-[#99d86a] text-green-800 leading-none">
+     */}
+      <div className="col-span-4 py-2 flex flex-col sm:flex-row sm:gap-2 items-center justify-center bg-[#99d86a] text-green-800 leading-none">
         <h1 className="text-lg font-bold leading-none">
           <span className="font-normal">2024</span> © New Detox®.
         </h1>
         <h1 className="text-lg font-normal leading-none">
           Todos os direitos reservados.
         </h1>
-      </div> */}
+      </div> 
     </div>
   );
 }

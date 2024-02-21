@@ -10,19 +10,12 @@ import { Link } from "react-scroll";
 
 import {
   Accordion,
-  AccordionActions,
   AccordionDetails,
   AccordionSummary,
-  Box,
-  Button,
   Card,
   CardMedia,
   Collapse,
-  Container,
   Dialog,
-  SpeedDial,
-  SpeedDialAction,
-  SpeedDialIcon,
 } from "@mui/material";
 import "animate.css";
 
@@ -72,9 +65,9 @@ export default function Home() {
 
   return (
     <div className="w-full grid grid-cols-12 relative">
-      {/* <Notification /> */}
+      <Notification />
       <div className=" col-span-12"></div>
-      <div className="col-span-12 p-5 border-b-2 border-green-500 flex items-center justify-center">
+      <div className="col-span-12 p-5 border-b-2 border-green-500 flex items-center justify-center animate__animated animate__animated">
         <img
           className="w-32 sm:w-40"
           src="https://newdetox.com.br/wp-content/uploads/2023/05/logo-1024x145.webp"
@@ -85,22 +78,22 @@ export default function Home() {
         <div className="col-span-1" />
         <div className="col-span-10 sm:col-span-4 flex  flex-col items-start justify-start pt-10">
           <div className="text-center sm:text-left">
-            <h1 className="font-Montserrat font-bold text-4xl sm:text-5xl text-green-800">
+            <h1 className="font-Montserrat font-bold text-4xl sm:text-5xl text-green-800 animate__animated animate__fadeInUp">
               SEM DIETAS MALUCAS <br /> OU EXERCÍCIOS <br /> FÍSICOS
             </h1>
-            <p className="font-Poppins text-2xl sm:text-3xl font-light ">
+            <p className="font-Poppins text-2xl sm:text-3xl font-light animate__animated animate__fadeInUp">
               Emagreça muito <br className="flex sm:hidden" /> mais{" "}
               <br className="hidden sm:flex" /> rápido!
             </p>
             <img
-              className="w-fit h-fit flex sm:hidden "
+              className="w-fit h-fit flex sm:hidden animate__animated animate__backInUp"
               src="https://newdetox.com.br/wp-content/uploads/2023/09/head-retret.webp"
               alt=""
             />
           </div>
           <div className="w-full sm:w-fit sm:mt-5 relative  rounded-xl shadow-2xl shadow-black/30">
             <iframe
-              className="w-full sm:w-96 h-48 sm:h-56 rounded-xl shadow-2xl  transition-all ease-in-out cursor-pointer border-4 border-green-700"
+              className="w-full sm:w-96 h-48 sm:h-56 rounded-xl shadow-2xl animate__animated animate__fadeInUp transition-all ease-in-out cursor-pointer border-4 border-green-700"
               src="https://www.youtube.com/embed/u1KOagon26Y?si=nGxhWPlfRzaI0blc"
               title="YouTube video player"
               // frameborder="0"
@@ -108,7 +101,7 @@ export default function Home() {
               // allowfullscreen
             ></iframe>
           </div>
-          <div className="flex flex-col mt-5 !w-full">
+          <div className="flex flex-col mt-5 !w-full animate__animated animate__bounceIn">
             <Link
               activeClass="active"
               to="pay"
@@ -116,7 +109,7 @@ export default function Home() {
               smooth={true}
               offset={20}
               duration={700}
-              className="font-Montserrat text-center sm:w-96 p-3 bg-green-700 border-b-4 border-lime-500 text-white font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
+              className="font-Montserrat text-center sm:w-96 p-3 bg-gradient-to-l from-green-600 via-green-700 to-green-800 border-b-4 border-lime-500 text-white font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
             >
               Quero um corpo novo
             </Link>
@@ -130,7 +123,7 @@ export default function Home() {
         <div className="hidden col-span-7  sm:flex flex-col justify-between items-end ">
           <div className="h-full flex items-center justify-center  w-full "></div>
           <img
-            className="w-fit h-fit"
+            className="w-fit h-fit animate__animated animate__fadeInUp"
             src="https://newdetox.com.br/wp-content/uploads/2023/09/head-retret.webp"
             alt=""
           />
@@ -195,7 +188,7 @@ export default function Home() {
               smooth={true}
               offset={20}
               duration={700}
-              className=" p-3 w-full text-center sm:w-96 bg-green-700 border-b-4 border-lime-500 text-white font-Montserrat font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
+              className=" p-3 w-full text-center sm:w-96 bg-gradient-to-l from-green-600 via-green-700 to-green-800 border-b-4 border-lime-500 text-white font-Montserrat font-bold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30"
             >
               comprar agora
             </Link>
@@ -283,13 +276,14 @@ export default function Home() {
         </div>
         <div className="col-span-12 py-10">
           <p className=" w-full text-center font-Montserrat font-bold text-4xl  text-white">
-            Feedback de quem recomenda!
+            Feedback de quem já está usando!
           </p>
         </div>
         <div className="col-span-12">
           <CardDepoiments2 />
         </div>
-        <div className="col-span-12">
+        <div className="col-span-1" />
+        <div className="col-span-10 flex flex-col items-center justify-center">
           <div className="px-5 mb-5">
             <button
               onClick={handleExpandClick}
@@ -306,6 +300,7 @@ export default function Home() {
             </div>
           </Collapse>
         </div>
+        <div className="col-span-1" />
       </div>
 
       <div className=" col-span-12 grid grid-cols-12  bg-gradient-to-l from-green-200 via-white to-white">
@@ -383,7 +378,7 @@ export default function Home() {
               smooth={true}
               offset={20}
               duration={700}
-              className="w-full sm:w-96 text-center p-3 bg-green-700 border-b-4 border-lime-500 text-white font-extrabold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30 !z-50"
+              className="w-full sm:w-96 text-center p-3 bg-gradient-to-l from-green-600 via-green-700 to-green-800 border-b-4 border-lime-500 text-white font-extrabold text-lg uppercase rounded-2xl transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-black/30 !z-50"
             >
               QUERO UMA VIDA NOVA
             </Link>
@@ -486,7 +481,7 @@ export default function Home() {
             <a
               target="_blank"
               rel="noopener"
-              className="w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
+              className=" w-2/3 p-2 mt-5 mb-2 bg-[#10b910] hover:bg-[#3dee3d] text-white font-extrabold text-md rounded-sm text-center uppercase  transition ease-in-out hover:scale-105 active:scale-95"
               href="https://app.monetizze.com.br/checkout/DFW247655"
             >
               comprar agora
@@ -749,7 +744,7 @@ export default function Home() {
         <div className="col-span-1" />
         <div className="col-span-10 py-10">
           <p className=" w-full text-center font-Montserrat   text-green-700 leading-none font-bold text-3xl sm:text-4xl mt-10">
-            APROVEITE O FRETE GRATIS
+            APROVEITE O FRETE GRATÍS
             <br className="hidden sm:flex" /> E TENHA O CORPO DOS SONHOS
           </p>
         </div>
@@ -820,13 +815,13 @@ export default function Home() {
         <div className="col-span-1 sm:col-span-3" />
         <div className="col-span-10 sm:col-span-6 flex flex-col gap-3">
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary  expandIcon={<ExpandMoreIcon />}>
               <ContactSupportIcon className="text-lime-600" />
               <p className="font-bold text-lime-600">
                 QUAIS OS EFEITOS DO NEW DETOX?
               </p>
             </AccordionSummary>
-            <AccordionDetails className="bg-gray-200">
+            <AccordionDetails className="bg-gray-100/50">
               New Detox possui uma ação emagrecedora, atuando na queima de
               gordura, desintoxicação do corpo, auxiliando na redução do inchaço
               do seu corpo, aumentando sua disposição e fazendo você emagrecer
@@ -840,7 +835,7 @@ export default function Home() {
                 QUANTOS KG CONSIGO EMAGRECER COM NEW DETOX?
               </p>
             </AccordionSummary>
-            <AccordionDetails className="bg-gray-200">
+            <AccordionDetails className="bg-gray-100/50">
               Os resultados variam de pessoa para pessoa, mas com New Detox você
               já consegue obter e ver diferença já nas primeiras semanas de uso.
             </AccordionDetails>
@@ -852,7 +847,7 @@ export default function Home() {
                 QUAL O PRAZO DA ENTREGA?
               </p>
             </AccordionSummary>
-            <AccordionDetails className="bg-gray-200">
+            <AccordionDetails className="bg-gray-100/50">
               O prazo médio de entrega para o Brasil é de 1 a 10 dias úteis. O
               produto só é enviado após a confirmação do seu pagamento pela
               administradora do seu cartão de crédito ou após a confirmação do
@@ -866,7 +861,7 @@ export default function Home() {
                 EXISTEM EFEITOS COLATERAIS? QUALQUER UM PODE TOMAR?
               </p>
             </AccordionSummary>
-            <AccordionDetails className="bg-gray-200">
+            <AccordionDetails className="bg-gray-100/50">
               Não existe nenhum efeito colateral com o consumo do produto, e
               qualquer pessoa pode tomar e aproveitar seus benefícios. Porém,
               gestantes, crianças, lactantes e pessoas enfermas ou que fazem uso
@@ -881,7 +876,7 @@ export default function Home() {
                 COMO DEVO USAR NEW DETOX?{" "}
               </p>
             </AccordionSummary>
-            <AccordionDetails className="bg-gray-200">
+            <AccordionDetails className="bg-gray-100/50">
               New Detox deve ser tomado diariamente, 2 cápsulas por dia,
               preferencialmente antes das refeições. Recomendamos o uso por no
               mínimo 3 meses para um resultado surpreendente.

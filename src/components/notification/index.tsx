@@ -12,7 +12,7 @@ import { DDDs, nomesMulheres } from "./test";
 export function Notification() {
   const [inUp, setInUp] = useState(false);
 
-  const numeros = faker.datatype.number({ min: 20000, max: 50000 });
+  const numeros = faker.datatype.number({ min: 10000, max: 50000 });
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -26,7 +26,7 @@ export function Notification() {
   return (
     <div
       className={`bg-gradient-to-l from-green-600 via-green-700 to-green-900 flex items-center gap-2 p-3 shadow-lg shadow-black/30 text-white fixed right-1 !z-50 bottom-5 rounded-xl ${
-        inUp ? "animate__backInUp" : "animate__backOutDown"
+        inUp ? "animate__bounceInUp" : "animate__bounceOutDown animate__faster"
       }  animate__animated `}
       // className={`bg-green-700 flex items-center gap-2 p-3 shadow-lg shadow-black/30 text-white fixed right-5 !z-50 bottom-5 rounded-xl`}
     >
@@ -52,7 +52,7 @@ export function Notification() {
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           <p className="font-bold font-Montserrat text-4xl italic text-green-400">
-            {faker.datatype.number({ min: 1, max: 6 })}x
+            {faker.datatype.number({ min: 1, max: 4 })}x
           </p>
           <img
             src="https://newdetox.com.br/wp-content/uploads/2023/10/5-new-e.webp"

@@ -63,10 +63,10 @@ export function CardDepoiments2() {
       className="mySwiper !bg-transparent"
     >
       {images.map((item, index) => (
-        <SwiperSlide className="w-28 rounded-sm !bg-transparent pb-5">
-          <div className=" overflow-hidden rounded-sm">
+        <SwiperSlide className="w-28 rounded-md !bg-transparent pb-5">
+          <div className=" overflow-hidden rounded-md">
             <img
-              className="w-full  hover:scale-110 transition duration-500 cursor-pointer object-cover rounded-sm "
+              className="w-full  hover:scale-110 transition duration-500 cursor-pointer object-cover rounded-md drop-shadow-xl"
               src={images[index]}
             />
           </div>
